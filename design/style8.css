@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f5f5dc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.band-section {
+  margin-bottom: 60px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.band-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.band-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.band-video {
+  width: 100%;
+  max-width: 600px;
+}
+
+.band-image {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  background: linear-gradient(45deg, #8b7355, #a0956b);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.band-name {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2c2416;
+}
+
+.band-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.band-genre {
+  background: #8b7355;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(90deg, #1db954, #1ed760);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 8px 24px rgba(29, 185, 84, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="70" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+  pointer-events: none;
+}
+
+.spotify-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.spotify-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.spotify-info h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.spotify-info p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.play-button {
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1db954;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.play-audio {
+  text-decoration: none;
+  color: #111;
+}
+
+.play-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 1s linear forwards;
+}
+
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 15px;
+  }
+
+  .container {
+      max-width: 320px;
+  }
+
+  h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+  }
+
+  .band-section {
+      padding: 20px;
+      margin-bottom: 40px;
+  }
+
+  .band-content {
+      gap: 20px;
+  }
+
+  .band-image {
+      max-width: 100%;
+      height: 150px;
+      font-size: 2rem;
+  }
+
+  .band-name {
+      font-size: 1.5rem;
+  }
+
+  .band-description {
+      font-size: 1rem;
+  }
+
+  .video-placeholder {
+      height: 100px;
+      padding: 15px 20px;
+  }
+
+  .spotify-icon {
+      width: 45px;
+      height: 45px;
+      font-size: 1.2rem;
+  }
+
+  .spotify-info h3 {
+      font-size: 1rem;
+  }
+
+  .spotify-info p {
+      font-size: 0.8rem;
+  }
+
+  .play-button {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+      padding: 10px;
+  }
+
+  .band-section {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  .band-name {
+      font-size: 1.3rem;
+  }
+}
+
+.directbt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.nav-arrow {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: 2px solid #333;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-arrow:hover {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 40px;
+  color:#333;
+  background-image: linear-gradient(45deg, #EDD5C0, #AE8BA1);
+  font-size: 17px;
+  border-radius: 30px;
+  transition: 0.10s;
+  transform: scale(1.0);
+}
+
+.nav-arrow.prev::before {
+  content: "←";
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.nav-arrow.next::after {
+  content: "→";
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
