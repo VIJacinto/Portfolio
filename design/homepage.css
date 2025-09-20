@@ -156,7 +156,7 @@ nav h1 {
 }
 
 .nav-menu.active {
-  left: 0;
+  left: -30px;
 }
 
 .hamburger {
