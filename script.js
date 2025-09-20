@@ -2,11 +2,6 @@
 function contactNumber() {
     alert ("Contact information is solely based on the phone number that I have \n phone number: 09282231400");
   }
-  
-  function mainMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('active');
-  }
 
 //-------------ACHIEVEMENTS----------------
 function pindotBaba() {

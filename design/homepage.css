@@ -160,31 +160,6 @@ nav h1 {
     display: none;
   }
   
-  .hamburger {
-    display: flex;
-  }
-  
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    background-color: beige;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    z-index: 1000;
-  }
-  
-  .nav-menu.active {
-    left: 0;
-  }
-  
-  .nav-menu li {
-    margin: 15px 0;
-  }
-  
   .nav-buttons {
     flex-direction: column;
     gap: 10px;
