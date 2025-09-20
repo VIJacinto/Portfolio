@@ -119,20 +119,6 @@ nav h1 {
   }
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
 .nav-menu {
   display: flex;
 }
@@ -153,8 +139,15 @@ nav h1 {
     display: none;
   }
   
-  .nav-menu {
-  flex-wrap: wrap;
+  ul li ul.dropdown li {
+    display: block;
+  }
+
+  ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
   }
 
   .nav-buttons {
