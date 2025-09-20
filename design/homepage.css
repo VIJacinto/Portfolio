@@ -39,6 +39,7 @@ nav ul li {
   font-family: Arial;
   cursor: pointer;
   flex-wrap: wrap;
+  margin-right: 15px;
 }
 
 nav ul li a {
@@ -145,7 +146,7 @@ nav h1 {
   top: 70px;
   width: 100%;
   height: calc(100vh - 70px);
-  background-color: white;
+  background-color: #BE9D6A;
   flex-direction: column;
   padding: 20px;
   box-shadow: 0 10px 27px rgba(0,0,0,0.05);
@@ -155,7 +156,7 @@ nav h1 {
 }
 
 .nav-menu.active {
-  left: 20;
+  left: 20px;
 }
 
 .hamburger {
