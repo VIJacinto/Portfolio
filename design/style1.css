@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url(/images/backend.png); 
+  background-image: url(images/backend.png); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -212,4 +212,5 @@ body {
       padding: 1.2rem 1.5rem;
       font-size: 1.5rem;
   }
+
 }
