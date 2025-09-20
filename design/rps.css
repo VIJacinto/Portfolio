@@ -39,6 +39,7 @@ body {
   font-size: 15px;
   padding: 8px 15px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .rockbabyrock {
@@ -110,4 +111,5 @@ body {
   .score {
     margin-top: 50px;
   }
+
 }
