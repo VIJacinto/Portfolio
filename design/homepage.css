@@ -142,7 +142,7 @@ nav h1 {
   
 .nav-menu {
   position: fixed;
-  left: -80%;
+  left: -100%;
   top: 70px;
   width: 100%;
   height: calc(100vh - 70px);
