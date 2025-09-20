@@ -141,7 +141,7 @@ nav h1 {
   
 .nav-menu {
   position: fixed;
-  left: -100%;
+  left: -80%;
   top: 70px;
   width: 100%;
   height: calc(100vh - 70px);
@@ -155,7 +155,7 @@ nav h1 {
 }
 
 .nav-menu.active {
-  left: 0;
+  left: 20;
 }
 
 .hamburger {
