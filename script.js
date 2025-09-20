@@ -3,6 +3,50 @@ function contactNumber() {
     alert ("Contact information is solely based on the phone number that I have \n phone number: 09282231400");
   }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navMenu = document.querySelector('.nav-menu');
+  const navButtons = document.querySelector('.nav-buttons');
+  
+  
+  const hamburger = document.createElement('div');
+  hamburger.innerHTML = '<span></span><span></span><span></span>';
+  hamburger.className = 'hamburger';
+  hamburger.onclick = toggleMenu;
+  
+  const nav = document.querySelector('nav');
+  nav.insertBefore(hamburger, nav.firstChild);
+  
+  function toggleMenu() {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+  
+  function checkScreenSize() {
+    if (window.innerWidth <= 780) {
+      navMenu.style.display = 'none';
+      navButtons.style.display = 'block';
+      hamburger.style.display = 'block';
+      
+      const navLinks = document.querySelectorAll('.navdetail');
+      navLinks.forEach(link => {
+          link.style.display = 'none';
+      });
+    } else {
+      navMenu.style.display = 'flex';
+      navButtons.style.display = 'flex';
+      hamburger.style.display = 'none';
+
+      const navLinks = document.querySelectorAll('.navdetail');
+      navLinks.forEach(link => {
+          link.style.display = 'block';
+      });
+    }
+  }
+    checkScreenSize();
+    
+    window.addEventListener('resize', checkScreenSize);
+});
+
 //-------------ACHIEVEMENTS----------------
 function pindotBaba() {
     const content = document.getElementById('dropdownContent');
