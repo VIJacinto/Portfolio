@@ -153,6 +153,10 @@ nav h1 {
     display: none;
   }
   
+  .nav-menu {
+  flex-wrap: wrap;
+  }
+
   .nav-buttons {
     flex-wrap: wrap;
     gap: 10px;
@@ -161,10 +165,6 @@ nav h1 {
 
   .nav-buttons {
   flex-wrap: wrap;
-  }
-  
-  .btn1 {
-    margin-right: 0;
   }
 }
 
