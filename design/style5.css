@@ -151,7 +151,7 @@ body {
 		gap: 20px;
 	}
 
-	.video-placeholder, .photo-placeholder {
+	.photo-placeholder {
 		height: 200px;
 		font-size: 1rem;
 	}
