@@ -128,7 +128,7 @@ nav h1 {
   display: flex;
 }
 
-@media (max-width: 1740px) {
+@media (max-width: 1600px) {
   .image1 {
     width: 450px;
     position:absolute;
