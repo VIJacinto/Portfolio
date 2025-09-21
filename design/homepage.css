@@ -130,10 +130,10 @@ nav h1 {
 
 @media (max-width: 1740px) {
   .image1 {
-    width: 390px;
+    width: 450px;
     position:absolute;
     bottom: 0;
-    right: 20%;
+    right: 12%;
   }
 }
 
