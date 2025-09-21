@@ -101,7 +101,7 @@ nav h1 {
 }
 
 .image1 {
-  width: 550px;
+  width: 500px;
   position:absolute;
   bottom: 0;
   right: 13%;
@@ -126,15 +126,6 @@ nav h1 {
 
 .nav-buttons {
   display: flex;
-}
-
-@media (max-width: 1600px) {
-  .image1 {
-    width: 450px;
-    position:absolute;
-    bottom: 0;
-    right: 12%;
-  }
 }
 
 @media (max-width: 1370px) {
